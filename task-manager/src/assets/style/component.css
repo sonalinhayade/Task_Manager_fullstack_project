@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+.main-content {
+  margin-left: 250px; /* ✅ same as .sidebar width */
+  padding: 2rem;
+  min-height: 100vh;
+  min-width: calc(100vw - 250px); /* ✅ same as .sidebar width */
+  background: linear-gradient(to bottom right, #f8f9fa, #e0f7fa);
+  color: #111827;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #1f2937;
+  height: 100vh;
+  color: white;
+  padding: 1.5rem 1rem;
+  font-family: "Inter", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.sidebar-title {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background-color: #374151;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  margin-bottom: 2rem; /* or try 1.5rem or 32px for fine-tuning */
+}
+
+.custom-btn-hover:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.text-custom-purple {
+  color: #6f42c1 !important;
+}
+
+/* In your CSS file, define styles for the light and dark themes */
+
+.header-light {
+  background-color: white;
+  color: black;
+}
+
+.header-dark {
+  background-color: black;
+  color: white;
+}
+
+/* You can also define other theme-specific styles for the rest of your app */
+body {
+  background-color: white; /* default light theme */
+  color: black;
+}
+
+body.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+/* Page Background */
+/* body {
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+} */
+
+/* Center Form Container */
+form {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.5s ease;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Label Styling */
+form label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+  display: block;
+  font-size: 15px;
+}
+/* Input, Select, Textarea */
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+  color: #333;
+}
+
+.form-error-inline {
+  position: absolute;
+  top: 70%;
+  left: 14px;
+  font-size: 0.8rem;
+  color: #dc3545;
+  padding: -1 4px;
+  padding-top: 4px;
+  line-height: 1;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.form-control,
+.form-select {
+  font-size: 16px; 
+}
+
+
+.form-floating .form-control,
+.form-floating .form-select {
+  padding-top: 1.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.form-floating > label {
+  transition: all 0.2s ease;
+  color: #555;
+  font-size: 16px;
+}
+
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.2);
+  background-color: #fff;
+  outline: none;
+}
+
+.form-error-message {
+  font-size: 0.85rem;
+  color: #dc3545;
+  margin-top: -10px; 
+  margin-bottom: 10px;
+  padding-left: 4px;
+}
+
+/* Submit Button */
+form button[type="submit"] {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+  display: block;
+  width: 100%;
+}
+
+form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 114, 255, 0.2);
+}
+
+input[type="date"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: url('data:image/svg+xml;charset=UTF-8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>') no-repeat center;
+  background-size: 20px 20px;
+  cursor: pointer;
+  opacity: 1;
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: auto;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 100%;
+  z-index: 1050;
+}
+.bg-pending {
+  background-color: #ff8800; /* custom orange */
+  color: white;
+}
+
+
+.modal-content {
+  z-index: 1060;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    width: 200px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+    min-width: 100vw;
+  }
+}
