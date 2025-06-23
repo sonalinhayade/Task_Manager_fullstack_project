@@ -6,7 +6,7 @@ A fully functional Task Manager web application built using **React.js** (Vite) 
 
 ## 🚀 Live Demo
 
-👉 [Task Manager Live](https://sonalitaskmanager.42web.io/frontend/completed-task)
+👉 [Task Manager Live](https://sonalitaskmanager.42web.io/frontend/completed-tasks)
 
 ---
 
