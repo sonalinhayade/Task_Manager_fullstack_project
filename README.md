@@ -32,8 +32,7 @@ A fully functional Task Manager web application built using **React.js** (Vite) 
 - ➕ Add New Task  
 - 📝 Edit Task  
 - ✅ Mark as Completed  
-- 🗑️ Delete Task  
-- 📊 Filter by Task Status  
+- 🗑️ Delete Task   
 - 🎨 Responsive Design
 
 ---
