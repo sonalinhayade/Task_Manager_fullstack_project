@@ -42,7 +42,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/frontend", // ✅ Add this line
+    basename: "/frontend/", // ✅ Add this line
   }
 );
 
